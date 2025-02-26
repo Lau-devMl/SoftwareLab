@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            padding: 5%;
+        }
+        .form-container {
+            padding: 5%;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            width: 100%;
+            max-width: 650px;
+        }
+        .form-label {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .form-control {
+            font-size: 1rem;
+        }
+        .btn {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="form-container">
+        <div class="text-center mb-4">
+            <img src="images/logo.jpg" alt="Logo" class="img-fluid" style="max-width: 40%;">
+        </div>
+        <form>
+            <div class="mb-3">
+                <label class="form-label" for="nombre">
+                    <i class="bi bi-person-fill me-2"></i> Nombre
+                </label>
+                <input type="text" id="nombre" class="form-control" placeholder="Ingrese su nombre">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="carrera">
+                    <i class="bi bi-book-fill me-2"></i> Carrera de Interés
+                </label>
+                <input type="text" id="carrera" class="form-control" placeholder="Ej: Ingeniería en Sistemas">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="telefono">
+                    <i class="bi bi-telephone-fill me-2"></i> Teléfono
+                </label>
+                <input type="tel" id="telefono" class="form-control" placeholder="Ingrese su teléfono">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

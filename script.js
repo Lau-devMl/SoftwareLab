@@ -1,5 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Function to get the user's IP address
+
+    const menuBtn = document.querySelector('.menu-btn');
+    const sideMenu = document.querySelector('.side-menu');
+    
+    menuBtn.addEventListener('click', function() {
+        sideMenu.classList.toggle('hidden');
+    });
+    
     async function getUserIP() {
         try {
             const response = await fetch('https://api.ipify.org?format=json');
@@ -28,4 +36,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Call the function to show alert with info
     showAlertWithInfo();
+    
 });

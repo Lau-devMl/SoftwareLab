@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Quiz Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <div class="side-menu hidden">
+        <button class="menu-btn hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="menu-content">
+            <a href="#question1">Question 1</a>
+            <a href="#question2">Question 2</a>
+            <a href="#question3">Question 3</a>
+        </div>
+    </div>
     <div class="container">
         <div class="logo">
             <img src="./images/logo.jpg" alt="Logo">
         </div>
         
-        <div class="question">
+        <div id="question1" class="question">
             <h2>Question 1</h2>
             <p>What is the capital of France?</p>
             <div class="buttons">
@@ -22,7 +35,7 @@
             </div>
         </div>
 
-        <div class="question">
+        <div id="question2" class="question">
             <h2>Question 2</h2>
             <p>Which planet is known as the Red Planet?</p>
             <div class="buttons">
@@ -32,7 +45,7 @@
             </div>
         </div>
 
-        <div class="question">
+        <div id="question3" class="question">
             <h2>Question 3</h2>
             <p>What is the largest mammal in the world?</p>
             <div class="buttons">

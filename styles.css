@@ -2,8 +2,45 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
     display: flex;
+}
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-theme .container {
+    background-color: #1e1e1e; /* Fondo oscuro para el contenedor */
+    color: #e0e0e0; /* Texto claro */
+}
+
+/* Botón de Cambio de Tema */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#theme-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+#theme-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme #theme-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .side-menu {

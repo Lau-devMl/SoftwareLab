@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            padding: 5%;
+            padding: 0.0%;
         }
         .form-container {
             padding: 5%;
@@ -19,6 +19,8 @@
             background-color: white;
             width: 100%;
             max-width: 650px;
+            margin-bottom: 10px; /* Agregar margen inferior al formulario */
+            margin-top: 17%;
         }
         .form-label {
             font-size: 1.2rem;
@@ -30,9 +32,64 @@
         .btn {
             font-size: 1.1rem;
         }
+        footer {
+            background-color: #003366; /* Updated color */
+            text-align: center;
+            color: white;
+            width: 100%; /* Asegurar que el footer abarque toda la página */
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0; /* Quitar el margin del footer */
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px; /* Mover el padding dentro del footer-content */
+        }
+
+        .footer-logos {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .footer-info {
+            font-size: 14px;
+            color: white; /* Updated text color for better contrast */
+            
+        }
+
+        @media (min-width: 600px) {
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .footer-logos {
+                margin-bottom: 0;
+            }
+        }
+
+        .spacer {
+            height: 50px; /* Aumentar la altura del espacio */
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     </style>
 </head>
-<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+
+<body class="d-flex flex-column justify-content-center align-items-center bg-light">
+
     <div class="form-container">
         <div class="text-center mb-4">
             <img src="images/logo.jpg" alt="Logo" class="img-fluid" style="max-width: 40%;">
@@ -59,5 +116,21 @@
             <button type="submit" class="btn btn-primary w-100">Enviar</button>
         </form>
     </div>
+    <div class="spacer"></div> <!-- Espacio aumentado -->
 </body>
+<footer>
+    <div class="footer-content">
+        <div class="footer-logos">
+            <img src="images/logo1.jpg" alt="Logo 1">
+            <img src="images/logo2.jpg" alt="Logo 2">
+            <img src="images/logo3.jpg" alt="Logo 3">
+        </div>
+        <div class="footer-info">
+            <p>Línea de Atención al Usuario: 6044600700 Opc. 1 / rectoria@salazaryherrera.edu.co</p>
+            <p>Dirección: Bulevar Libertadores de América # 52-49 Barrio Los Colores, Medellín - Colombia.</p>
+            <p>Copyright @ 2025 / Política de Privacidad</p>
+            <p>SERVICIO AL CLIENTE</p>
+        </div>
+    </div>
+</footer>
 </html>
